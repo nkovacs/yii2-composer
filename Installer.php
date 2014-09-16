@@ -77,6 +77,7 @@ class Installer extends LibraryInstaller
 
     protected function addPackage(PackageInterface $package)
     {
+        var_dump($package->getName());
         $extension = [
             'name' => $package->getName(),
             'version' => $package->getVersion(),
